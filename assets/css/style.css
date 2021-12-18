@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&display=swap");
+
+/* Body  */
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #5b76a0;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    scroll-padding-top: 60px;
+}
+
+h1,
+h3,
+h4 {
+    font-family: "Architects Daughter", cursive;
+    font-weight: 300;
+    text-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 40px;
+}
+
+.shiatsu h3,
+.about-me h3,
+.testimonial-section h3 {
+    border-bottom: 2px solid #5b76a0;
+}
+
+.price-section h3,
+.find-me h3 {
+    border-bottom: 2px solid #f5f9fd;
+}
+
+/* Navigation */
+
+nav {
+    z-index: 100;
+    background-color: #5b76a0;
+    height: 60px;
+}
+
+.navbar-brand,
+.nav-item,
+.navbar {
+    color: #f5f9fd;
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-toggler {
+    color: #f5f9fd;
+    background-color: #5b76a0;
+    padding: 8px 16px;
+}
+
+.nav-link:hover,
+.nav-item a:hover,
+.active {
+    text-decoration: underline;
+    color: #f5f9fd;
+}
+
+.navbar-dark,
+.navbar-brand {
+    color: #f5f9fd;
+    text-align: right;
+}
+
+.fa-spa {
+    font-size: 1.5em;
+}
+
+ul.navbar-nav.navbar-brand {
+    background-color: #5b76a0;
+}
+
+/* hero image */
+
+.hero {
+    min-height: 100vh;
+    padding-top: 100px;
+    background: url("../images/conscious-design-unsplash.jpg") no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.jumbotron-index {
+    margin: 20px;
+    position: absolute;
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: rgba(245, 245, 245, 0.9);
+    border-radius: 0.5rem;
+}
+
+.display-5 {
+    border-radius: 0.5rem;
+}
+
+/* About Shiatsu */
+
+.shiatsu img {
+    box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.shiatsu {
+    padding: 40px 0px 50px 0px;
+}
+
+/* About Shin Tai  */
+
+.shintai-section {
+    padding: 40px 0px 50px 0px;
+    background-color: #299491;
+    color: #f5f9fd;
+}
+
+.shintai-section h3 {
+    border-bottom: 1px solid #f5f9fd;
+}
+
+/* Md,sm devices about-shintai */
+.card.card-shintai {
+    border: 0;
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.card-body-shintai {
+    color: #315252;
+    background-color: #f5f9fd;
+}
+
+.card-header.card-header-shintai {
+    background-color: #45b0ae;
+    color: #f5f9fd;
+}
+
+.card-header .btn-link {
+    color: #f5f9fd;
+    text-decoration: none;
+}
+
+.card-header .btn-link:hover {
+    text-decoration: underline;
+}
+
+/* About Me  */
+
+.about-me {
+    padding: 40px 0px 50px 0px;
+}
+
+.about-me h3 {
+    margin-bottom: 40px;
+}
+
+.about-me img {
+    margin-bottom: 30px;
+    box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.5);
+}
+
+.about-me a {
+    color: #5b76a0;
+    text-decoration: underline;
+}
+
+.about-me a:hover {
+    background-color: #5b76a0;
+    color: #f5f9fd;
+    text-decoration: underline;
+}
+
+/* Md,sm devices About-me */
+.card.card-me {
+    border: 0;
+}
+
+.card-body-me {
+    color: #80a1d4;
+    background-color: #f5f9fd;
+}
+
+.card-header.card-header-me {
+    background-color: #5b76a0;
+    color: #f5f9fd;
+}
+
+/* Pricing  */
+
+.price-section {
+    padding: 40px 0px;
+    background-color: #827aa2;
+    color: #f5f9fd;
+}
+
+iframe {
+    border: 0;
+}
+
+/* Testimonials  */
+
+.testimonial-section {
+    padding: 40px 0 50px 0;
+    align-items: center;
+}
+
+blockquote {
+    font-size: 1rem;
+}
+
+.card.testimonials.mx-auto.h-100 {
+    max-width: 500px;
+}
+
+
+/* Show More  */
+/* https://medium.com/@beedaan/partial-collapse-with-bootstrap-3-ef4e6bf85537  */
+/* https://stackoverflow.com/questions/55879271/bootstrap-4-display-two-lines-followed-by-a-read-more-expandable-link  */
+#showMore #collapseExample.collapse:not(.show) {
+    display: block;
+    height: 6rem;
+    overflow: hidden;
+}
+
+#showMore #collapseExample.collapsing {
+    height: 3rem;
+}
+
+#showMore {
+    line-height: 1.5;
+}
+
+#showMore a.collapsed:after {
+    content: '+ Show More';
+    color: #5b76a0;
+}
+
+#showMore a:not(.collapsed):after {
+    content: '- Show Less';
+    color: #5b76a0;
+}
+
+/* Find  */
+
+.find-me {
+    background-color: #299491;
+    color: #f5f9fd;
+    padding: 30px 0 40px 0;
+    text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+/* Footer  */
+
+footer {
+    background-color: #5b76a0;
+    align-items: center;
+    text-align: center;
+}
+
+.contact {
+    color: #f5f9fd;
+    text-align: center;
+    /* padding-top: 15px; */
+}
+
+.col-md-6.contact a:hover {
+    color: purple;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.sm-links {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.sm-links li {
+    /* width: 50px; */
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    color: #f5f9fd;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+a {
+    color: #f5f9fd;
+    text-decoration: none;
+}
+
+.sm-links li a i:hover {
+    color: #f5f9fd;
+    text-decoration: underline;
+    text-underline-position: under;
+    border-bottom: solid 2px #f5f9fd;
+    padding-bottom: 2px;
+}
+
+.sm-link-shiatsu li img {
+    width: auto;
+    height: 120px;
+    text-align: left;
+    align-items: center;
+    margin: 15px 0 0 20px;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+/* 404 error page  */
+.img-error img {
+    width: 450px;
+    height: 300px;
+}
