@@ -4,8 +4,8 @@
 html,
 body {
     font-family: "Montserrat", sans-serif;
-    color: #5b76a0;
-    /* color: tomato; */
+    /* color: #5b76a0; */
+    color: tomato;
     position: relative;
     padding: 0px;
     margin: 0px;
